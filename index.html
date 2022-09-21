@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--complete the designing for the weather class in mobile view -->
+
+<body>
+  <!-- code for navbar -->
+   
+  <div class="nav">
+    <h3 class="h">Forecast</h3>
+    <div class="box" id="b">
+      <input type="text" id="sb" placeholder="search">
+      <button id="icon"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+
+  <!-- code for main content -->
+
+  <div class="weather">
+    <div class="center">
+      <h3 class="city">Weather in Mumbai,IN</h3>
+      <div class="tempflex">
+        <img src="https://openweathermap.org/img/wn/50d@2x.png" alt="" class="wicon">
+        <div class="temp">00°C</div>
+      </div>
+      <h3 class="description">Cloudy</h3>
+      <div class="newcontainer">
+        <div class="uw">
+          <div class="humidity">60%</div>
+          <div class="wind">6 km/h</div>
+          <div class="latitude">19.0760</div>
+          <div class="longitude">72.8777</div>
+        </div>
+        <div class="hf">
+          <div class="hu">Humidity</div>
+          <div class="ws">Wind speed</div>
+          <div class="lat">Latitude</div>
+          <div class="lon">Longitude</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- code for daily forecast -->
+  <div class="container">
+    <p class="dfh">Daily Forecast</p>
+    <div class="dailyweather">
+      <div class="daily">
+        <h3 class="d1">Mon</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+      <div class="daily">
+        <h3 class="d2">Tue</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+      <div class="daily">
+        <h3 class="d3">Wed</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+      <div class="daily">
+        <h3 class="d4">Thu</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+      <div class="daily">
+        <h3 class="d5">Fri</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+      <div class="daily">
+        <h3 class="d6">Sat</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+      <div class="daily">
+        <h3 class="d7">Sun</h3>
+        <img src="https://openweathermap.org/img/wn/50n.png" alt="" class="dicon">
+        <h3 class="th">20°c</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/ff61fbf734.js" crossorigin="anonymous">
+  </script>
+  <!-- <script src="api.js"></script> -->
+  <!-- javascript -->
+  <script>
+      const icon = document.querySelector('#icon');
+      const b = document.querySelector('.box');
+      icon.onclick = function () {
+       b.classList.toggle('active')
+}   
+  </script>
+</body>
+
+</html>
